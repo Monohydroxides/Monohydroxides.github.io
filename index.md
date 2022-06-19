@@ -2,4 +2,4 @@
 
 太懒了,什么都没有
 
-[链接](/_posts/tmp.md)
+[链接](./_posts/tmp.md)
