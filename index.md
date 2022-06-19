@@ -1,5 +1,5 @@
 # Monohydroxides 的主页
 
-太懒了,什么都没有
+太懒了,这里什么都没有
 
-[链接](./_posts/tmp.md)
+<a href="monohydroxides/_posts/tmp.md">测试链接<\a>
