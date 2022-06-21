@@ -1,5 +1,5 @@
 ---
-tag: cf
+tag: Codeforces
 ---
 
 # Codeforces Round #802 (Div. 2) C,D
