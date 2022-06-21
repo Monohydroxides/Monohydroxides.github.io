@@ -1,3 +1,7 @@
+---
+tag: cf
+---
+
 # Codeforces Round #802 (Div. 2) C,D
 
 ## C. Helping the Nature
