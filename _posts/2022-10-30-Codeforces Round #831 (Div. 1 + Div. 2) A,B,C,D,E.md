@@ -31,7 +31,7 @@ tag: Codeforces
 ### [E. Hanging Hearts](https://codeforces.com/contest/1740/problem/E)
 树形 dp。
 观察样例，每个节点的最大值可以通过子节点的最长链 +1 得到，使用 $dp[u][1]$ 维护最长链，$dp[u][0]$ 维护答案，进行一次 dfs 即可。
-```C++
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
