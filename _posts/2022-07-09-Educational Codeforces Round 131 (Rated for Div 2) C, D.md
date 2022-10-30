@@ -77,6 +77,7 @@ int main(){
 **题目描述**：$a$ 是 $1 \sim n$ 的一个排列，对于 $b_i$，其生成规则为：$b_i = \lfloor \frac{i}{a_i} \rfloor$。现给定数列 $b$，求一个可能的 $a$。
 
 **思路**：不难发现，对于 $a_i$，其范围应该满足
+
 $$
 \lfloor \frac{i}{b_i + 1} \rfloor + 1
 \leq a_i \leq
