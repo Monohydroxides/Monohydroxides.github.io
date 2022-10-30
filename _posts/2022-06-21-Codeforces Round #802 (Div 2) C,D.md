@@ -16,7 +16,7 @@ tag: Codeforces
 
 # Codeforces Round #802 (Div. 2) C,D
 
-## C. Helping the Nature
+### C. Helping the Nature
 
 **题目描述**：给定一个数组 $a_1, a_2, \dots, a_n$，有如下三种操作：
 
@@ -78,7 +78,7 @@ int main(){
 }
 ```
 
-## D. River Locks
+### D. River Locks
 
 **题目描述**：一排水桶接水，每个水桶上有一个水管，每个水管一单位时间内可放出一单位的水，当这个水桶的水量达到要求时，多出的水会跑到右侧的水桶中。给定水桶的数量和每个水桶的接水量要求，求多组询问下要在给定的时间内让所有的水桶中的水量达到要求，最少需要开启的水管的数量。
 

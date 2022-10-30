@@ -16,7 +16,7 @@ tag: Codeforces
 
 # Codeforces Round #803 (Div. 2) C,D
 
-## C. 3SUM Closure
+### C. 3SUM Closure
 
 **题目描述**：给定一个由整数构成的数组，若其中任意三个下标不同的数之和仍在这个数组中，那么称这个数组是 3SUM-closed。求判断一个数组是否是 3SUM-closed 数组，多组测试数据。
 
@@ -101,7 +101,7 @@ int main(){
 }
 ```
 
-## D. Fixed Point Guessing
+### D. Fixed Point Guessing
 
 **题目描述**：交互题，一个由 $n$ 个正整数构成的一个排列：$1, 2, \dots, n(3 \leq n \leq 10^4, n\ is\ odd)$，现将其中的 $\frac{n-1}{2}$ 组两两交换，那么肯定会剩余一个数在其本来的位置上没有被交换。现对每个用例可以进行最多 $15$ 次询问，询问一个区间中的数的构成（将从小到大排序后返回给你），输出那个没有被交换的数。
 
