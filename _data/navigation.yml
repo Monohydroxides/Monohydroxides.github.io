@@ -10,7 +10,7 @@ toc:
       - page: CodeForces
         subsubfolderitems:
           - page: Codeforces Round 802 (Div 2) C,D
-            url: /Codeforces Round 802 (Div 2) C,D.md
+            url: ./posts/2022-06-21-Codeforces Round 802 (Div 2) C,D.md
           - page: Codeforces Round 803 (Div 2) C,D
             url: ./_posts/2022-07-01-Codeforces Round 803 (Div 2) C,D.md
       - page: 杂题选做
