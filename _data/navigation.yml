@@ -4,7 +4,7 @@ toc:
       - page: 计算机网络
         subsubfolderitems:
           - page: 计算机网络（一）计算机网络概述
-            url: '/2022/11/10/计算机网络（一）计算机网络概述.html'
+            url: '/2022/11/10/计算机网络概述.html'
   - title: 程序设计与算法
     subfolderitems:
       - page: CodeForces
