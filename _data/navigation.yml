@@ -1,0 +1,28 @@
+toc:
+  - title: 课程学习
+    subfolderitems:
+      - page: 计算机网络
+        subsubfolderitems:
+          - page: 计算机网络（一）计算机网络概述
+            url: '/'
+  - title: 程序设计与算法
+    subfolderitems:
+      - page: CodeForces
+        subsubfolderitems:
+          - page: Codeforces Round 802 (Div 2) C,D
+            url: /posts/2022-06-21-Codeforces Round 802 (Div 2) C,D.md
+          - page: Codeforces Round 803 (Div 2) C,D
+            url: ./_posts/2022-07-01-Codeforces Round 803 (Div 2) C,D.md
+      - page: 杂题选做
+        subsubfolderitems:
+          - page: 2022 多校
+            url: '/'
+          - page: CF883I PhotoProcessing
+            url: '/'
+      - page: 数学
+        subsubfolderitems:
+          - page: 数论反演相关
+            url: '/2022/10/08/数论反演相关.html'
+          - page: 生成函数
+            url: '/'
+
