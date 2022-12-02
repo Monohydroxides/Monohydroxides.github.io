@@ -11,6 +11,8 @@ toc:
             url: '/2022/11/24/计算机网络_数据链路层.html'
           - page: 计算机网络（四）网络层
             url: '/2022/11/28/计算机网络_网络层.html'
+          - page: 计算机网络（五）传输层
+            url: '/2022/12/02/计算机网络_传输层.html'
   - title: 程序设计与算法
     subfolderitems:
       - page: CodeForces
