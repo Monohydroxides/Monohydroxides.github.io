@@ -1,3 +1,15 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 ### [A. Divide and Conquer](https://codeforces.com/contest/1762/problem/A)
 按题意中的操作，使用最小次数改变一个数列的和的奇偶性，只需要改变这个数列中能被最快改变奇偶性的数的奇偶性即可。
 
