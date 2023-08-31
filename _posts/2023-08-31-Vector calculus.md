@@ -26,7 +26,7 @@ $$
 \begin{matrix}
 \frac{\partial f}{\partial x_1} & \frac{\partial f}{\partial x_2}
 \end{matrix}
-\mathbb{R}ight]
+\right]
 }_{\frac{\partial f}{\partial \boldsymbol x}}
 \underbrace{
 \left[
@@ -34,7 +34,7 @@ $$
 \frac{\partial x_1}{\partial s} & \frac{\partial x_1}{\partial t} \\
 \frac{\partial x_2}{\partial s} & \frac{\partial x_2}{\partial t}
 \end{matrix}
-\mathbb{R}ight]
+\right]
 }_{\frac{\partial \boldsymbol x}{\partial(s,t)}}
 $$
 
@@ -50,7 +50,7 @@ f_2(\boldsymbol x) \\
 \vdots \\
 f_m(\boldsymbol x) \\
 \end{matrix}
-\mathbb{R}ight]
+\right]
 \in \mathbb{R}^m
 $$
 
@@ -64,7 +64,7 @@ $$
 \vdots & & \vdots \\
 \frac{\partial f_m(\boldsymbol x)}{\partial x_1} & \dots & \frac{\partial f_m(\boldsymbol x)}{\partial x_n} \\
 \end{matrix}
-\mathbb{R}ight]
+\right]
 \in \mathbb{R}^m
 $$
 
@@ -86,7 +86,7 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 > \vdots & & \vdots \\
 > \frac{\partial f_M}{\partial x_1} & \dots & \frac{\partial f_M}{\partial x_N}
 > \end{matrix}
-> \mathbb{R}ight]
+> \right]
 > =
 > \left[
 > \begin{matrix}
@@ -94,12 +94,12 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 > \vdots & & \vdots \\
 > A_{M1} & \dots & A_{MN}
 > \end{matrix}
-> \mathbb{R}ight]
+> \right]
 > =
 > A
 > $$
 
->For $h: \mathbb{R} \to \mathbb{R}, h(t)=(f \circ g)(t)$, where $f: \mathbb{R}^2 \to \mathbb{R}$, $g: \mathbb{R} \to \mathbb{R}^2$, $f(\boldsymbol x)=\exp(x_1 x_2^2)$, $\boldsymbol x = \left[ \begin{matrix}x_1 \\ x_2\end{matrix}\mathbb{R}ight]$, $g(t)=\left[ \begin{matrix}t\cos t \\ t\sin t\end{matrix}\mathbb{R}ight]$, we are required to compute gradient of $h$ with respect to $t$.
+>For $h: \mathbb{R} \to \mathbb{R}, h(t)=(f \circ g)(t)$, where $f: \mathbb{R}^2 \to \mathbb{R}$, $g: \mathbb{R} \to \mathbb{R}^2$, $f(\boldsymbol x)=\exp(x_1 x_2^2)$, $\boldsymbol x = \left[ \begin{matrix}x_1 \\ x_2\end{matrix}\right]$, $g(t)=\left[ \begin{matrix}t\cos t \\ t\sin t\end{matrix}\right]$, we are required to compute gradient of $h$ with respect to $t$.
 >
 >$$
 >\begin{aligned}
@@ -109,14 +109,14 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 >\begin{matrix}
 >x_2^2\exp(x_1x_2^2) & 2x_1x_2\exp(x_1x_2^2)
 >\end{matrix}
->\mathbb{R}ight]
+>\right]
 >
 >\left[
 >\begin{matrix}
 >\cos t-t \sin t \\
 >\sin t+t \cos t
 >\end{matrix}
->\mathbb{R}ight] \\
+>\right] \\
 >&= (x_2^2\exp(x_1x_2^2)) \cdot (\cos t-t \sin t) + (2x_1x_2\exp(x_1x_2^2)) \cdot (\sin t+t \cos t)
 >\end{aligned}
 >$$
@@ -129,13 +129,16 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 > $$
 > 
 > Where $\boldsymbol \theta \in \mathbb{R}^D, \boldsymbol \Phi \in \mathbb{R}^{N \times D}, \boldsymbol y \in \mathbb{R}^N$, define functions:
+> 
 > $$
 > \begin{aligned}
 > L(\boldsymbol e)&:=\Vert \boldsymbol e \Vert^2 \\
 > \boldsymbol e(\boldsymbol \theta)&:=\boldsymbol y-\boldsymbol \Phi \boldsymbol \theta
 > \end{aligned}
 > $$
+> 
 > For least-squares loss function, we seek $\frac{\partial L}{\partial \boldsymbol \theta}$.
+> 
 > $$
 > \begin{aligned}
 > \frac{\partial L}{\partial \boldsymbol \theta} &= \frac{\partial L}{\partial \boldsymbol e}\frac{\partial \boldsymbol e}{\partial \boldsymbol \theta} \\
@@ -151,20 +154,27 @@ Because of the fact that there is a vector-space isomorphism between the space $
 >
 > For $\boldsymbol f=\boldsymbol A \boldsymbol x$, $\boldsymbol f \in \mathbb{R}^M, \boldsymbol A \in \mathbb{R}^{M \times N}, \boldsymbol x \in \mathbb{R}^N$, we seek the gradient $\frac{d \boldsymbol f}{d \boldsymbol A}$.
 > First of all, we should know the dimension: $\frac{d \boldsymbol f}{d \boldsymbol A} \in \mathbb{R}^{M \times (M \times N)}$.
+> 
 > $$
 > \frac{d \boldsymbol f}{d \boldsymbol A} = 
-> 
 > \left[
 > \begin{matrix}
 > \frac{df_1}{d \boldsymbol A} \\
 > \vdots \\
 > \frac{df_m}{d \boldsymbol A}
 > \end{matrix}
-> \mathbb{R}ight]
+> \right]
 > $$
+> 
 > For $f_i$, we obtain $f_i=\sum_{j=1}^{N}\boldsymbol A_{ij}\boldsymbol x_j$, $\frac{\partial f_i}{\partial \boldsymbol A} \in \mathbb{R}^{1 \times (M \times N)}$.
 >
-> By vectorization, we get $\frac{\partial f_i}{\partial \boldsymbol A}=\left[\begin{matrix} 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \\ x_1 & \dots & x_N \\ 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \end{matrix}\right] \in \mathbb{R}^{1 \times (M \times N)}$, where $\boldsymbol x$ lays on the $i$ th row.
+> By vectorization, we get 
+> 
+> $$
+> \frac{\partial f_i}{\partial \boldsymbol A}=\left[\begin{matrix} 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \\ x_1 & \dots & x_N \\ 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \end{matrix}\right] \in \mathbb{R}^{1 \times (M \times N)}
+> $$
+> 
+> where $\boldsymbol x$ lays on the $i$ th row.
 
 > **Gradient of Matrices with Respect to Matrices**
 >
@@ -175,6 +185,7 @@ Because of the fact that there is a vector-space isomorphism between the space $
 > Similarly, for $\boldsymbol K_{pq}$, we have $\frac{dK_{pq}}{d\boldsymbol R} \in \mathbb{R}^{1 \times (M \times N)}$, and $\boldsymbol K_{pq} = \sum_{j=1}^{N}R_{jp} \cdot R_{jq}$.
 >
 > So we have
+> 
 > $$
 > \frac{\partial K_{pq}}{\partial R_{rs}}=
 > \begin{equation}
