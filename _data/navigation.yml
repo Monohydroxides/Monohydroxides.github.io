@@ -1,4 +1,10 @@
 toc:
+  - title: 机器学习
+    subfolderitems:
+      - page: 机器学习的数学基础
+        subsubfolderitems:
+          - page: Vector calculus
+            url: '/2023/08/31/Vector_calculus.md'
   - title: 计算机课程相关
     subfolderitems:
       - page: 计算机网络
