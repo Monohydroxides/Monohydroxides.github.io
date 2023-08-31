@@ -123,9 +123,11 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 >Where $x_1=t\cos t$, $x_2=t\sin t$.
 
 > Consider the linear model:
+> 
 > $$
 > \boldsymbol y=\boldsymbol \Phi \boldsymbol \theta
 > $$
+> 
 > Where $\boldsymbol \theta \in \mathbb{R}^D, \boldsymbol \Phi \in \mathbb{R}^{N \times D}, \boldsymbol y \in \mathbb{R}^N$, define functions:
 > $$
 > \begin{aligned}
@@ -162,7 +164,7 @@ Because of the fact that there is a vector-space isomorphism between the space $
 > $$
 > For $f_i$, we obtain $f_i=\sum_{j=1}^{N}\boldsymbol A_{ij}\boldsymbol x_j$, $\frac{\partial f_i}{\partial \boldsymbol A} \in \mathbb{R}^{1 \times (M \times N)}$.
 >
-> By vectorization, we get $\frac{\partial f_i}{\partial \boldsymbol A}=\left[\begin{matrix} 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \\ x_1 & \dots & x_N \\ 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \end{matrix}\mathbb{R}ight] \in \mathbb{R}^{1 \times (M \times N)}$, where $\boldsymbol x$ lays on the $i$ th row.
+> By vectorization, we get $\frac{\partial f_i}{\partial \boldsymbol A}=\left[\begin{matrix} 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \\ x_1 & \dots & x_N \\ 0 & \dots & 0 \\ \vdots & & \vdots \\ 0 & \dots & 0 \end{matrix}\right] \in \mathbb{R}^{1 \times (M \times N)}$, where $\boldsymbol x$ lays on the $i$ th row.
 
 > **Gradient of Matrices with Respect to Matrices**
 >
@@ -187,11 +189,11 @@ Because of the fact that there is a vector-space isomorphism between the space $
 
 **Useful Identities for Computing Gradients**
 
-$\frac{\partial}{\partial \boldsymbol X} \boldsymbol f(\boldsymbol X)^\top = \left(\frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\mathbb{R}ight)^\top$
+$\frac{\partial}{\partial \boldsymbol X} \boldsymbol f(\boldsymbol X)^\top = \left(\frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\right)^\top$
 
-$\frac{\partial}{\partial \boldsymbol X} \text{tr}(\boldsymbol f(\boldsymbol X)) = \text{tr}\left(\frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\mathbb{R}ight)$
+$\frac{\partial}{\partial \boldsymbol X} \text{tr}(\boldsymbol f(\boldsymbol X)) = \text{tr}\left(\frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\right)$
 
-$\frac{\partial}{\partial \boldsymbol X} \det(\boldsymbol f(\boldsymbol X)) = \det(\boldsymbol f(\boldsymbol X))\text{tr}\left(\boldsymbol f(\boldsymbol X)^{-1}\frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\mathbb{R}ight)$
+$\frac{\partial}{\partial \boldsymbol X} \det(\boldsymbol f(\boldsymbol X)) = \det(\boldsymbol f(\boldsymbol X))\text{tr}\left(\boldsymbol f(\boldsymbol X)^{-1}\frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\right)$
 
 $\frac{\partial}{\partial \boldsymbol X} \boldsymbol f(\boldsymbol X)^{-1} = -\boldsymbol f(\boldsymbol X)^{-1} \frac{\partial \boldsymbol f(\boldsymbol X)}{\partial \boldsymbol X}\boldsymbol f(\boldsymbol X)^{-1}$
 
