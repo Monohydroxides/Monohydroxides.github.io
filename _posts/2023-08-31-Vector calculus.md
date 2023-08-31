@@ -41,6 +41,7 @@ $$
 **Gradients of Vector-Valued Functions and Jacobian**
 
 Now, we consider gradients of Vector-Valued Functions. For function $\boldsymbol f: \mathbb{R}^n \to \mathbb{R}^m$, $\boldsymbol x=[x_1, \dots, x_n]^\top$, we can view this function in this way:
+
 $$
 \boldsymbol f(\boldsymbol x) = 
 \left[
