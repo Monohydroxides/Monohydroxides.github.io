@@ -110,7 +110,6 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 >x_2^2\exp(x_1x_2^2) & 2x_1x_2\exp(x_1x_2^2)
 >\end{matrix}
 >\right]
->
 >\left[
 >\begin{matrix}
 >\cos t-t \sin t \\
@@ -120,6 +119,7 @@ Now we can define $\textbf{Jacobian}$: $J=\nabla_{\boldsymbol x} \boldsymbol f=\
 >&= (x_2^2\exp(x_1x_2^2)) \cdot (\cos t-t \sin t) + (2x_1x_2\exp(x_1x_2^2)) \cdot (\sin t+t \cos t)
 >\end{aligned}
 >$$
+>
 >Where $x_1=t\cos t$, $x_2=t\sin t$.
 
 > Consider the linear model:
