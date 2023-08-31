@@ -4,21 +4,13 @@ toc:
       - page: 机器学习的数学基础
         subsubfolderitems:
           - page: Vector calculus
-            url: '/2023/08/31/Vector-calculus.md'
+            url: '/2023/08/31/Vector-calculus.html'
   - title: 计算机课程相关
     subfolderitems:
       - page: 计算机网络
         subsubfolderitems:
-          - page: 计算机网络（一）计算机网络概述
-            url: '/2022/11/10/计算机网络_计算机网络概述.html'
-          - page: 计算机网络（二）物理层
-            url: '/2022/11/20/计算机网络_物理层.html'
-          - page: 计算机网络（三）数据链路层
-            url: '/2022/11/24/计算机网络_数据链路层.html'
-          - page: 计算机网络（四）网络层
-            url: '/2022/11/28/计算机网络_网络层.html'
-          - page: 计算机网络（五）传输层
-            url: '/2022/12/02/计算机网络_传输层.html'
+          - page: 计算机网络总结
+            url: '/2022/12/02/计算机网络总结.html'
   - title: 程序设计与算法
     subfolderitems:
       - page: CodeForces
