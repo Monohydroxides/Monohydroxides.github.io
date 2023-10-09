@@ -49,7 +49,7 @@ $$
 
 where $\varepsilon \sim \mathcal{N}(0, I)$.
 
-We obtain $p(x_{t + \delta t} | x_{t}) | \mathcal{N}( x_{t} + f(x_{t}, t) \delta t, g^{2}(t) \delta t I)$.
+We obtain $p(x_{t + \delta t} \mid x_{t}) \sim \mathcal{N}( x_{t} + f(x_{t}, t) \delta t, g^{2}(t) \delta t I)$.
 
 $$
 \begin{aligned}
