@@ -1,6 +1,10 @@
 toc:
   - title: 机器学习
     subfolderitems:
+      - page: AIGC
+        subsubfolderitems:
+          - page: SCORE BASED GENERATIVE MODELING THROUGH STOCHASTIC DIFFERENTIAL EQUATIONS
+            url: '/2023/10/09/SCORE-BASED-GENERATIVE-MODELING-THROUGH-STOCHASTIC-DIFFERENTIAL-EQUATIONS.html'
       - page: 机器学习的数学基础
         subsubfolderitems:
           - page: Vector calculus
